@@ -59,17 +59,6 @@ https://github.com/KalyanMurapaka45/Hand-Tracking-Using-Opencv/assets/101493756/
 - **Dynamic obstacle avoidance** with collision detection
 - **Live scoring system** and racing UI
 - **Camera mirroring awareness** for intuitive controls
-
-### 4. �🏎️ Motorsport Engine Visualizer (`motorsport_hand_tracker_simple.py`)
-- Interactive 3D engine visualization
-- Gesture-controlled zoom and view modes
-- Educational tool for engine components
-- Real-time hand gesture recognition
-
-### 5. Advanced Engine Visualizer (`motorsport_hand_tracker.py`)
-- Enhanced 3D engine visualization using Pygame
-- More detailed engine components
-- Smoother animations and interactions
    
 
 ## Getting Started
