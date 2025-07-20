@@ -1,2 +1,6 @@
 opencv-python
 mediapipe
+numpy
+matplotlib
+pygame
+Pillow

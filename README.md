@@ -2,16 +2,63 @@
 
 ## About The Project
 
-This Python script utilizes OpenCV and MediaPipe to perform real-time hand tracking using a webcam. The code captures video input from the default camera, processes the frames to detect and track hand landmarks using the MediaPipe Hands module, and subsequently visualizes the landmarks on the live feed. For each detected hand, the script identifies and prints the coordinates of the landmarks, with a distinctive filled circle highlighting the first landmark (index 0). The frame rate is calculated and displayed in the corner, providing insights into the processing speed. Overall, this script combines the power of computer vision libraries to create a hands-on experience, quite literally, by bringing hand-tracking capabilities to your fingertips. It's a practical demonstration of the intersection between software and real-world interaction, opening doors to diverse applications such as virtual reality, gaming, and accessibility interface.
+This Python project utilizes OpenCV and MediaPipe to perform real-time hand tracking using a webcam. The original script captures video input from the default camera, processes the frames to detect and track hand landmarks using the MediaPipe Hands module, and subsequently visualizes the landmarks on the live feed.
 
+### 🏎️ NEW: Interactive Racing Hand Game
+
+The project now includes an **Interactive Racing Game** that combines hand gesture recognition with real-time racing gameplay! Control a race car using intuitive hand gestures and navigate through obstacles on a racing track.
+
+#### 🎮 Game Features:
+- **Speed Control**: Use finger gap on your left hand (right in camera due to mirroring) to control acceleration and braking
+- **Steering Control**: Use your right hand (left in camera) vertical position to steer left and right
+- **Dynamic Obstacles**: Randomly generated obstacles that you must avoid
+- **Real-time Scoring**: Score points by avoiding obstacles and maintaining speed
+- **Collision Detection**: Realistic collision system that affects your car's performance
+- **Racing UI**: Live speed, score, and time display
+
+#### 🕹️ Game Controls:
+- 🚗 **Speed Control (Left Hand - appears as right in camera)**:
+  - **Small gap** between thumb and index finger: **BRAKE** 🛑
+  - **Large gap** between thumb and index finger: **ACCELERATE** 🚀
+  - **Medium gap**: **Coast/Maintain Speed** ⚡
+- 🎯 **Steering Control (Right Hand - appears as left in camera)**:
+  - **Move hand UP**: **Turn LEFT** ⬅️
+  - **Move hand DOWN**: **Turn RIGHT** ➡️
+  - **Center position**: **Go STRAIGHT** ⬆️
+
+#### 🏆 Objective:
+Navigate your race car through the track, avoid orange obstacles, stay within the white track boundaries, and achieve the highest score possible!
 
 https://github.com/KalyanMurapaka45/Hand-Tracking-Using-Opencv/assets/101493756/e0d7fae9-4a16-4639-b5fe-04d5c7f6ce38
 
 
 ## Built With
 
- - Opencv
- - Mediapipe
+ - OpenCV
+ - MediaPipe
+ - NumPy
+ - Matplotlib
+ - Pygame (for advanced 3D visualization)
+   
+
+## Available Applications
+
+### 1. Basic Hand Tracking (`app.py`)
+- Real-time hand landmark detection
+- FPS display
+- Basic hand tracking visualization
+
+### 2. Media Hand Tracking (`Hand Tracking from Media .py`)
+- Process video files for hand tracking
+- Save output videos with hand tracking overlays
+
+### 3. � Interactive Racing Game (`racing_hand_game.py`) - **FEATURED**
+- **Real-time racing gameplay** controlled entirely by hand gestures
+- **Speed control** using finger gap spacing
+- **Steering control** using hand position
+- **Dynamic obstacle avoidance** with collision detection
+- **Live scoring system** and racing UI
+- **Camera mirroring awareness** for intuitive controls
    
 
 ## Getting Started
@@ -56,9 +103,21 @@ Follow these steps to install and set up the project directly from the GitHub re
      ```
 
 5. **Run the Project**
-   - Start the project by running the appropriate command.
+   - For basic hand tracking:
      ```
      python app.py
+     ```
+   - **For the interactive racing game (RECOMMENDED):**
+     ```
+     python racing_hand_game.py
+     ```
+   - For motorsport engine visualization:
+     ```
+     python motorsport_hand_tracker_simple.py
+     ```
+   - For advanced engine visualization:
+     ```
+     python motorsport_hand_tracker.py
      ```
 
 6. **Access the Project**
